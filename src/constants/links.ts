@@ -18,7 +18,8 @@ export const MAIN_LAYOUT_LINKS = [
   {
     id: '3',
     label: 'Whitepaper',
-    href: ROUTES.WHITEPAPER,
+    href: EXTERNAL_SITES.SYMPHONY_WHITEPAPER,
+    target: '_blank',
   },
   {
     id: '4',
@@ -119,8 +120,8 @@ export const FOOTER_LINKS = [
       {
         id: '1',
         label: 'Whitepaper',
-        target: '',
-        href: ROUTES.WHITEPAPER,
+        target: '_blank',
+        href: EXTERNAL_SITES.SYMPHONY_WHITEPAPER,
       },
       {
         id: '2',

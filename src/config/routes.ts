@@ -24,6 +24,7 @@ export const EXTERNAL_SITES = {
   SYMPHONY: 'https://symphony.orchestralabs.org',
   SYMPHONY_DOCS: 'https://symphony.orchestralabs.org/docs',
   SYMPHONY_EXPLORER: 'https://symphony.orchestralabs.org/explorer',
+  SYMPHONY_WHITEPAPER: 'https://symphony.orchestralabs.org/whitepaper',
   ARIA: 'https://aria.orchestralabs.org',
   ARIA_DOCS: 'https://aria.orchestralabs.org/docs',
 };
