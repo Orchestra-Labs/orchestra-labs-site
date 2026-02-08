@@ -17,12 +17,6 @@ export const MAIN_LAYOUT_LINKS = [
   },
   {
     id: '3',
-    label: 'Whitepaper',
-    href: EXTERNAL_SITES.SYMPHONY_WHITEPAPER,
-    target: '_blank',
-  },
-  {
-    id: '4',
     label: 'Ambassadors',
     href: ROUTES.AMBASSADORS.ROOT,
   },
@@ -119,18 +113,12 @@ export const FOOTER_LINKS = [
     links: [
       {
         id: '1',
-        label: 'Whitepaper',
-        target: '_blank',
-        href: EXTERNAL_SITES.SYMPHONY_WHITEPAPER,
-      },
-      {
-        id: '2',
         label: 'Brand Kit',
         target: '_blank',
         href: 'https://www.figma.com/design/RMidyza0EkEnExu0YRw9iJ/Symphony-Brand-Kit?node-id=0-1&t=VJW7ckSbrgKCK5O5-1',
       },
       {
-        id: '3',
+        id: '2',
         label: 'Privacy Policy',
         target: '',
         href: ROUTES.PRIVACY_POLICY,
