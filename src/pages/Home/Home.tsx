@@ -12,7 +12,7 @@ import { InfoRowsSection } from '@/sections/InfoRowsSection';
 import image1 from '@/assets/images/info-image1.png';
 import image2 from '@/assets/images/info-image2.png';
 import image3 from '@/assets/images/info-image3.png';
-import { ROUTES } from '@/config/';
+import { EXTERNAL_SITES } from '@/config/';
 import { ExternalLinks } from '@/constants';
 
 const BENEFITS_ROWS = [
@@ -41,27 +41,27 @@ const FEATURED_LINKS_ROWS = [
   {
     id: 1,
     src: image4,
-    title: 'Create a Wallet',
-    description: 'Get started on your blockchain journey!',
+    title: 'Aria Wallet',
+    description: 'Multi-chain crypto wallet for Cosmos and beyond',
     link: ExternalLinks.GOOGLE_EXTENSION_STORE,
-    linkLabel: 'Get Started',
+    linkLabel: 'Download Now',
   },
   {
     id: 2,
     src: image5,
-    title: 'Join the community',
-    description: 'See our latest updates!',
-    link: undefined,
-    linkLabel: 'Join',
-    showSocials: true,
+    title: 'Symphony Blockchain',
+    description: 'Decentralized stablecoins with robust safeguards',
+    link: EXTERNAL_SITES.SYMPHONY,
+    linkLabel: 'Learn More',
   },
   {
     id: 3,
     src: image6,
-    title: 'Read about Us',
-    description: 'Learn about our approach!',
-    link: ROUTES.DOCUMENTATION.ROOT,
-    linkLabel: 'Learn More',
+    title: 'Join the Community',
+    description: 'See our latest updates!',
+    link: undefined,
+    linkLabel: 'Join',
+    showSocials: true,
   },
 ];
 

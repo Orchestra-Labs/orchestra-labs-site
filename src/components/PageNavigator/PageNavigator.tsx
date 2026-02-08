@@ -8,14 +8,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/ui-kit';
-import { DOCUMENTATION_NAVIGATION } from '@/config/';
+import { AMBASSADOR_NAVIGATION } from '@/config/';
 
 export const PageNavigator = () => {
   const location = useLocation();
   const [collapsed, setCollapsed] = useState(false);
   const [visible, setVisible] = useState(true);
   const currentPath = location.pathname;
-  const documentationNavigationItems = Object.values(DOCUMENTATION_NAVIGATION);
+  const documentationNavigationItems = Object.values(AMBASSADOR_NAVIGATION);
 
   // Delay visibility update to allow expansion animation
   useEffect(() => {

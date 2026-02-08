@@ -96,7 +96,7 @@ export const BasicDetails = () => (
         <strong>Note: </strong>A full list of what you can earn through this
         program can be found broken down by level{' '}
         <Link
-          to={ROUTES.DOCUMENTATION.AMBASSADORS.LEVEL_BENEFITS}
+          to={ROUTES.AMBASSADORS.LEVEL_BENEFITS}
           className="text-blue hover:text-blue-darker underline"
         >
           here

@@ -1,37 +1,30 @@
 import { Discord, GitHub, Telegram, XIcon } from '@/assets/icons';
 import { LinkTree } from '@/assets/icons/LinkTree';
-import { ROUTES } from '@/config/';
+import { ROUTES, EXTERNAL_SITES } from '@/config/';
 
 export const MAIN_LAYOUT_LINKS = [
   {
     id: '1',
-    label: 'Airdrop',
-    href: 'https://airdrop-tracker.orchestralabs.org/',
+    label: 'Symphony',
+    href: EXTERNAL_SITES.SYMPHONY,
+    target: '_blank',
   },
   {
     id: '2',
-    label: 'Swap',
-    href: 'https://swap.orchestralabs.org/',
+    label: 'Aria Wallet',
+    href: EXTERNAL_SITES.ARIA,
+    target: '_blank',
   },
   {
     id: '3',
     label: 'Whitepaper',
     href: ROUTES.WHITEPAPER,
   },
-  { id: '4', label: 'Learn', href: ROUTES.DOCUMENTATION.ROOT },
-  // {
-  //   id: '5',
-  //   label: 'Explorer',
-  //   target: '_blank',
-  //   href: 'https://testnet.ping.pub/symphony',
-  // },
-];
-
-export const EXPLORER_LAYOUT_LINKS = [
-  { id: '1', label: 'Home', href: ROUTES.EXPLORER.ROOT },
-  { id: '2', label: 'Tokens', href: ROUTES.EXPLORER.TOKENS },
-  { id: '3', label: 'Blocks', href: ROUTES.EXPLORER.BLOCKS },
-  { id: '4', label: 'Transactions', href: ROUTES.EXPLORER.TRANSACTIONS },
+  {
+    id: '4',
+    label: 'Ambassadors',
+    href: ROUTES.AMBASSADORS.ROOT,
+  },
 ];
 
 export const SOCIAL_LINKS = [
@@ -72,27 +65,31 @@ export const SYMPHONY_LINKS = {
 export const FOOTER_LINKS = [
   {
     id: '1',
-    name: 'COMPANY',
+    name: 'PRODUCTS',
     links: [
       {
         id: '1',
-        label: 'About Us',
-        target: '',
-        href: ROUTES.DOCUMENTATION.ABOUT.ROOT,
+        label: 'Symphony',
+        target: '_blank',
+        href: EXTERNAL_SITES.SYMPHONY,
       },
       {
         id: '2',
-        label: 'Contact Us',
-        target: '',
-        href: 'dblackstone@orchestralabs.org',
+        label: 'Aria Wallet',
+        target: '_blank',
+        href: EXTERNAL_SITES.ARIA,
       },
-      // { id: '3', label: 'Terms & Privacy', href: '#' },
       {
         id: '3',
-        label: 'Brand Kit',
+        label: 'Airdrop Tracker',
         target: '_blank',
-
-        href: 'https://www.figma.com/design/RMidyza0EkEnExu0YRw9iJ/Symphony-Brand-Kit?node-id=0-1&t=VJW7ckSbrgKCK5O5-1',
+        href: 'https://airdrop-tracker.orchestralabs.org/',
+      },
+      {
+        id: '4',
+        label: 'Swap',
+        target: '_blank',
+        href: 'https://swap.orchestralabs.org/',
       },
     ],
   },
@@ -104,24 +101,10 @@ export const FOOTER_LINKS = [
         id: '1',
         label: 'Ambassador Program',
         target: '',
-
-        href: ROUTES.DOCUMENTATION.AMBASSADORS.ROOT,
+        href: ROUTES.AMBASSADORS.ROOT,
       },
       {
         id: '2',
-        label: 'Knowledge Base',
-        target: '',
-        href: ROUTES.DOCUMENTATION.ROOT,
-      },
-      {
-        id: '3',
-        label: 'Developer Docs',
-        target: '',
-
-        href: ROUTES.DOCUMENTATION.DEVELOPERS.ROOT,
-      },
-      {
-        id: '4',
         label: 'Blogs',
         target: '_blank',
         rel: 'noopener noreferrer',
@@ -131,13 +114,24 @@ export const FOOTER_LINKS = [
   },
   {
     id: '3',
-    name: 'LEGAL',
+    name: 'RESOURCES',
     links: [
       {
         id: '1',
+        label: 'Whitepaper',
+        target: '',
+        href: ROUTES.WHITEPAPER,
+      },
+      {
+        id: '2',
+        label: 'Brand Kit',
+        target: '_blank',
+        href: 'https://www.figma.com/design/RMidyza0EkEnExu0YRw9iJ/Symphony-Brand-Kit?node-id=0-1&t=VJW7ckSbrgKCK5O5-1',
+      },
+      {
+        id: '3',
         label: 'Privacy Policy',
         target: '',
-
         href: ROUTES.PRIVACY_POLICY,
       },
     ],

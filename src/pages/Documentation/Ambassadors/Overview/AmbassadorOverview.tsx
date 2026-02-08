@@ -1,6 +1,6 @@
 import { ListLinks, DocumentationLayout } from '@/components';
 import { NavItem } from '@/types';
-import { DOCUMENTATION_NAVIGATION } from '@/config/';
+import { AMBASSADOR_NAVIGATION } from '@/config/';
 
 const HEADINGS = {
   0: {
@@ -27,7 +27,7 @@ const NAVIGATION_ITEMS: NavItem[] = [
 ];
 
 const AMBASSADOR_DOCUMENTATION_LINKS =
-  DOCUMENTATION_NAVIGATION.AMBASSADOR_PROGRAM.subList || [];
+  AMBASSADOR_NAVIGATION.AMBASSADOR_PROGRAM.subList || [];
 
 export const AmbassadorOverview = () => (
   <DocumentationLayout navigationItems={NAVIGATION_ITEMS} heading={HEADINGS[0]}>
