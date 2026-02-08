@@ -26,8 +26,9 @@ const NAVIGATION_ITEMS: NavItem[] = [
   },
 ];
 
-const AMBASSADOR_DOCUMENTATION_LINKS =
-  AMBASSADOR_NAVIGATION.AMBASSADOR_PROGRAM.subList || [];
+const AMBASSADOR_DOCUMENTATION_LINKS = Object.values(AMBASSADOR_NAVIGATION).filter(
+  item => item.id !== '1', // Exclude Overview itself
+);
 
 export const AmbassadorOverview = () => (
   <DocumentationLayout navigationItems={NAVIGATION_ITEMS} heading={HEADINGS[0]}>

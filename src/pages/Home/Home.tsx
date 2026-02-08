@@ -41,12 +41,12 @@ const PRODUCTS_ROWS = [
 
 const PRODUCTS_SECTION_TITLE = (
   <p className="text-center">
-    Our <span className="text-blue tracking-wide-20">Products</span>
+    Our <span className="text-blue">Products</span>
   </p>
 );
 const PRODUCTS_SECTION_SUBTITLE = (
   <p className="text-center">
-    Building the <span className="text-blue">future of DeFi</span>
+    Building and shaping the <span className="text-blue">future of DeFi</span>
   </p>
 );
 
