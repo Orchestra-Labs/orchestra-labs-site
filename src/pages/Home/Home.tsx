@@ -1,5 +1,4 @@
 import image4 from '@/assets/images/info-image4.png';
-import image5 from '@/assets/images/info-image5.png';
 import image6 from '@/assets/images/info-image6.png';
 import {
   BlogArticlesSlider,
@@ -8,7 +7,6 @@ import {
 } from '@/sections';
 import { InfoRowsSection } from '@/sections/InfoRowsSection';
 
-import { EXTERNAL_SITES } from '@/config/';
 import { ExternalLinks } from '@/constants';
 
 const PRODUCTS_ROWS = [
@@ -22,14 +20,6 @@ const PRODUCTS_ROWS = [
   },
   {
     id: 2,
-    src: image5,
-    title: 'Symphony Blockchain',
-    description: 'The stablecoin chain. Decentralized real-world assets with robust safeguards and dynamic rebalancing.',
-    link: EXTERNAL_SITES.SYMPHONY,
-    linkLabel: 'Learn More',
-  },
-  {
-    id: 3,
     src: image6,
     title: 'Join the Community',
     description: 'Connect with us and stay updated on the latest developments!',

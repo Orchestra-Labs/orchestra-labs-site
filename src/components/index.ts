@@ -1,6 +1,5 @@
 export * from './AutoNav';
 export * from './CodeBlock';
-export * from './DocumentationLayout';
 export * from './Footer';
 export * from './Header';
 export * from './ImageModal';
@@ -8,7 +7,6 @@ export * from './ListLinks';
 export * from './Loader';
 export * from './MobileMenu';
 export * from './NavItems';
-export * from './PageNavigator';
 export * from './ScrollToTop';
 export * from './SectionNavigator';
 export * from './ShortListView';

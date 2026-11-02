@@ -5,18 +5,8 @@ import { ROUTES, EXTERNAL_SITES } from '@/config/';
 export const MAIN_LAYOUT_LINKS = [
   {
     id: '1',
-    label: 'Symphony Chain',
-    href: EXTERNAL_SITES.SYMPHONY,
-  },
-  {
-    id: '2',
     label: 'Aria Wallet',
     href: EXTERNAL_SITES.ARIA,
-  },
-  {
-    id: '3',
-    label: 'Ambassadors',
-    href: ROUTES.AMBASSADORS.ROOT,
   },
 ];
 
@@ -62,27 +52,9 @@ export const FOOTER_LINKS = [
     links: [
       {
         id: '1',
-        label: 'Symphony Chain',
-        target: '',
-        href: EXTERNAL_SITES.SYMPHONY,
-      },
-      {
-        id: '2',
         label: 'Aria Wallet',
         target: '',
         href: EXTERNAL_SITES.ARIA,
-      },
-      {
-        id: '3',
-        label: 'Airdrop Tracker',
-        target: '',
-        href: 'https://airdrop-tracker.orchestralabs.org/',
-      },
-      {
-        id: '4',
-        label: 'Swap',
-        target: '',
-        href: 'https://swap.orchestralabs.org/',
       },
     ],
   },
@@ -92,12 +64,6 @@ export const FOOTER_LINKS = [
     links: [
       {
         id: '1',
-        label: 'Ambassador Program',
-        target: '',
-        href: ROUTES.AMBASSADORS.ROOT,
-      },
-      {
-        id: '2',
         label: 'Blogs',
         target: '_blank',
         rel: 'noopener noreferrer',

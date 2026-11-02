@@ -15,7 +15,7 @@ export const HeroSection = () => (
           <p className="text-blue text-h5">Building the Future of DeFi</p>
         </h1>
         <p className="text-grey text-body-md md:text-body-lg xl:text-body-xl mt-5">
-          Decentralized blockchain and wallet solutions for the Cosmos ecosystem
+          Decentralized wallet solutions for the Cosmos ecosystem
         </p>
         <div className="flex gap-4 mt-7 flex-wrap justify-center">
           <Link
@@ -29,18 +29,6 @@ export const HeroSection = () => (
             )}
           >
             Aria Wallet
-          </Link>
-          <Link
-            to={EXTERNAL_SITES.SYMPHONY}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              'inline-flex no-underline items-center justify-center w-fit px-11 py-4 rounded-full bg-background-dark-grey',
-              'text-grey font-semibold text-base/6 text-center',
-              'hover:bg-background-dark-grey-hover',
-            )}
-          >
-            Symphony Chain
           </Link>
         </div>
       </div>
