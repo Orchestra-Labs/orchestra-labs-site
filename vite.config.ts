@@ -14,5 +14,8 @@ export default defineConfig({
   },
   preview: {
     open: false,
+    // Vite refuses any Host it doesn't know (403). Production serves this domain and
+    // its www alias through a Cloud Run domain mapping, plus the service's run.app URL.
+    allowedHosts: ['orchestralabs.org', 'www.orchestralabs.org', '.run.app'],
   },
 });
