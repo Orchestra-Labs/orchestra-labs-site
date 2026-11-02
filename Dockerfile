@@ -6,7 +6,7 @@ COPY . .
 ENV PORT=4173
 EXPOSE 4173
 
-RUN yarn install
+RUN yarn install --immutable
 RUN yarn build
 
 CMD ["yarn", "start"]

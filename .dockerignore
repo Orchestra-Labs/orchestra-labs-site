@@ -1,0 +1,36 @@
+# Keep the build context to what the Dockerfile needs (COPY . . then yarn install --immutable + yarn build).
+# Must stay in: .yarn/releases/ (pinned Yarn), .yarnrc.yml, yarn.lock, package.json, public/, src/,
+# index.html and the configs (vite, tsconfig, tailwind, postcss, eslint).
+
+# Dependencies and build output (rebuilt inside the image)
+**/node_modules
+dist
+dist-ssr
+coverage
+
+# Yarn state that is machine-local (the release binary in .yarn/releases/ is kept)
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Version control
+.git
+
+# Logs
+logs
+**/*.log
+
+# Env files (the example is kept)
+.env*
+!.env.example
+
+# Editor folders
+.vscode
+.idea
+.DS_Store
+
+# Untracked working notes
+DOCUMENTATION_ANALYSIS.md
+USER_DOCUMENTATION_PLAN.md
