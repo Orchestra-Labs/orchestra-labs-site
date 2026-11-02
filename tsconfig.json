@@ -4,10 +4,9 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "baseUrl": ".",
 
     /* Bundler mode */
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -32,6 +31,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "splide-types": [
+        "./node_modules/@splidejs/react-splide/dist/types/index.d.ts"
       ]
     }
   },

@@ -1,10 +1,13 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-import viteTsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), viteTsconfigPaths()],
+  plugins: [react()],
+  resolve: {
+    // "@/*" alias comes from tsconfig.json "paths" (native in Vite 8; replaces vite-tsconfig-paths).
+    tsconfigPaths: true,
+  },
   server: {
     open: true,
     host: true,
