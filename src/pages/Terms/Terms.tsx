@@ -9,9 +9,78 @@ export const Terms = () => (
           Effective Date: Nov 04, 2026
         </p>
         <p className="mt-15">
-          Given you know Orchestra Labs doesn&apos;t give a shit about the
-          actions of its users since it only provides a non-custodial service,
-          I, by agreeing to these terms, merely promise to not be a dick.
+          Given you know Orchestra Labs is a non-custodial service and as such
+          not responsible for its users, I, by use of the services, agree to
+          these terms. Effectively, promising to not be a dick.
+        </p>
+
+        <div id="the-plain-version" className="mt-15">
+          <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
+            The plain version
+          </h2>
+          <ol className="list-decimal mt-10 px-6 md:pl-8">
+            <li>
+              <strong>You hold your keys.</strong> Aria is a non-custodial
+              wallet. Your recovery phrase and keys stay on your device, or in
+              your own cloud backup if you turn that on, encrypted with your
+              password. Orchestra Labs never has them, can&apos;t move your
+              funds, and can&apos;t recover a lost phrase or password.
+            </li>
+            <li>
+              <strong>Provided as-is.</strong> Aria and Orchestra Labs services
+              are provided &quot;as is&quot; and &quot;as available&quot;,
+              without warranties of any kind. They may have bugs, outages or
+              changes.
+            </li>
+            <li>
+              <strong>Your transactions are yours.</strong> Blockchain
+              transactions are final. You&apos;re responsible for checking
+              everything you sign and send with Orchestra Labs services,
+              including Aria: addresses, amounts and fees.
+            </li>
+            <li>
+              <strong>Other people&apos;s services.</strong> Swaps, bridges,
+              staking, yield and dApps are run by third parties. We don&apos;t
+              control them and aren&apos;t responsible for their losses,
+              failures or fees.
+            </li>
+            <li>
+              <strong>Not advice.</strong> Nothing in Orchestra Labs services,
+              including Aria and its AI assistant, is financial, legal or tax
+              advice. The AI can be wrong; check before you act.
+            </li>
+            <li>
+              <strong>Follow your local laws.</strong> You&apos;re responsible
+              for using Orchestra Labs services, including Aria, legally where
+              you live. That includes sanctions and tax rules.
+            </li>
+            <li>
+              <strong>Limit of liability.</strong> To the extent the law allows,
+              Orchestra Labs isn&apos;t liable for indirect or consequential
+              losses, or for any loss of funds, data or profits from using
+              Orchestra Labs services, including Aria.
+            </li>
+            <li>
+              <strong>Changes.</strong> We may update these terms. If you keep
+              using Orchestra Labs services, including Aria, after an update,
+              you accept the new terms.
+            </li>
+            <li>
+              <strong>Governing law.</strong> These terms are governed by the
+              laws of the State of Delaware, USA, and disputes go to the state
+              or federal courts located in Delaware.
+            </li>
+          </ol>
+        </div>
+
+        <p className="mt-15">
+          Contact:{' '}
+          <a
+            className="text-white underline"
+            href="mailto:dblackstone@orchestralabs.org"
+          >
+            dblackstone@orchestralabs.org
+          </a>
         </p>
       </div>
     </div>
