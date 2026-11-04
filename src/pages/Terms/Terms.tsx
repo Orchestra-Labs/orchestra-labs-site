@@ -66,9 +66,24 @@ export const Terms = () => (
               you accept the new terms.
             </li>
             <li>
+              <strong>Age.</strong> You must be at least 18, and old enough to
+              agree to these terms where you live.
+            </li>
+            <li>
+              <strong>Disputes go to arbitration.</strong> Any dispute about
+              Orchestra Labs services or these terms is settled by binding
+              individual arbitration under the American Arbitration
+              Association&apos;s Consumer Arbitration Rules, not in court.
+              Either side may still use small-claims court. You and Orchestra
+              Labs each give up any right to a jury trial or to bring or join a
+              class action. You can opt out of this point by emailing the
+              contact address below within 30 days of first using the services.
+            </li>
+            <li>
               <strong>Governing law.</strong> These terms are governed by the
-              laws of the State of Delaware, USA, and disputes go to the state
-              or federal courts located in Delaware.
+              laws of the State of Delaware, USA. Anything not settled by
+              arbitration goes to the state or federal courts located in
+              Delaware.
             </li>
           </ol>
         </div>
