@@ -6,10 +6,11 @@ const HEADINGS: Record<number, { id: string; label: string }> = {
   2: { id: 'data-usage', label: '2. Data Usage' },
   3: { id: 'data-sharing', label: '3. Data Sharing' },
   4: { id: 'third-party-services', label: '4. Third-Party Services' },
-  5: { id: 'security', label: '5. Security' },
-  6: { id: 'policy-changes', label: '6. Changes to This Policy' },
-  7: { id: 'user-rights', label: '7. Your Rights' },
-  8: { id: 'contact-us', label: '8. Contact Us' },
+  5: { id: 'google-sign-in', label: '5. Google Sign-In and Backup' },
+  6: { id: 'security', label: '6. Security' },
+  7: { id: 'policy-changes', label: '7. Changes to This Policy' },
+  8: { id: 'user-rights', label: '8. Your Rights' },
+  9: { id: 'contact-us', label: '9. Contact Us' },
 };
 
 const NAVIGATION_ITEMS: NavItem[] = Object.keys(HEADINGS).map(key => ({
@@ -26,7 +27,7 @@ export const PrivacyPolicy = () => (
           Privacy Policy
         </h1>
         <p className="text-xl md:text-h5 xl:text-h3 mt-10">
-          Effective Date: Dec 05, 2024
+          Effective Date: Nov 04, 2026
         </p>
 
         <div id={HEADINGS[1].id} className="mt-15">
@@ -35,8 +36,8 @@ export const PrivacyPolicy = () => (
           </h2>
           <p className="mt-10">
             We value your privacy and do not collect or store any personal or
-            identifiable user data through the use of the [Your Extension Name]
-            extension. Any data collection is incidental and limited to:
+            identifiable user data through the use of Aria Wallet. Any data
+            collection is incidental and limited to:
           </p>
           <ul className="list-disc mt-5 px-6 md:pl-8">
             <li>
@@ -72,9 +73,9 @@ export const PrivacyPolicy = () => (
             {HEADINGS[3].label}
           </h2>
           <p className="mt-10">
-            We do not share, sell, or disclose any data to third parties. Any
-            incidental data collected through external sources will not be
-            shared except as required by law.
+            We don&apos;t sell your data. We share it only with the third-party
+            services that carry out what you ask (section 4), or as required by
+            law.
           </p>
         </div>
 
@@ -84,9 +85,8 @@ export const PrivacyPolicy = () => (
           </h2>
           <p className="mt-10">
             This extension may interact with third-party tools or APIs to
-            enhance functionality. These tools do not collect or store your
-            personal data. Any interactions with third-party services are
-            governed by their respective privacy policies.
+            enhance functionality. Any interactions with third-party services
+            are governed by their respective privacy policies.
           </p>
         </div>
 
@@ -95,15 +95,55 @@ export const PrivacyPolicy = () => (
             {HEADINGS[5].label}
           </h2>
           <p className="mt-10">
-            We do not store any user data directly, so no additional security
-            measures are necessary. Any incidental data from external sources is
-            subject to the security measures of those platforms.
+            If you choose to back up your wallet with Google, Aria asks Google
+            for your email address and for access to its own hidden folder in
+            your Google Drive (the drive.appdata permission). Aria can&apos;t
+            see any other files in your Drive.
+          </p>
+          <ul className="list-disc mt-5 px-6 md:pl-8">
+            <li>
+              Your backup is encrypted on your device with your backup password
+              before it is saved to that folder. We can&apos;t read it, and we
+              can&apos;t recover it if you lose the password.
+            </li>
+            <li>
+              Your email address is only shown in the extension so you know
+              which account you&apos;re using. It is never sent to Orchestra
+              Labs.
+            </li>
+            <li>
+              The backup goes only between your device and your Google account.
+              None of your Google data passes through our servers, and we never
+              sell or share it, or use it for advertising.
+            </li>
+            <li>
+              You can remove the backup by deleting Aria&apos;s app data in your
+              Google Drive settings, and remove Aria&apos;s access at
+              myaccount.google.com/permissions.
+            </li>
+          </ul>
+          <p className="mt-10">
+            Aria Wallet&apos;s use of information received from Google APIs will
+            adhere to the Google API Services User Data Policy, including the
+            Limited Use requirements.
           </p>
         </div>
 
         <div id={HEADINGS[6].id} className="mt-15">
           <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
             {HEADINGS[6].label}
+          </h2>
+          <p className="mt-10">
+            We never receive your recovery phrase, private keys or passwords.
+            Our services keep your wallet addresses, for rewards. Any incidental
+            data from external sources is subject to the security measures of
+            those platforms.
+          </p>
+        </div>
+
+        <div id={HEADINGS[7].id} className="mt-15">
+          <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
+            {HEADINGS[7].label}
           </h2>
           <p className="mt-10">
             We reserve the right to update this privacy policy at any time.
@@ -113,25 +153,25 @@ export const PrivacyPolicy = () => (
           </p>
         </div>
 
-        <div id={HEADINGS[7].id} className="mt-15">
-          <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
-            {HEADINGS[7].label}
-          </h2>
-          <p className="mt-10">
-            Since we do not collect personal or identifiable data, there is no
-            data to request, delete, or modify. For comments or data shared on
-            external platforms, users should refer to the respective platform's
-            privacy policies for managing their data.
-          </p>
-        </div>
-
         <div id={HEADINGS[8].id} className="mt-15">
           <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
             {HEADINGS[8].label}
           </h2>
           <p className="mt-10">
+            You can ask us to delete the wallet addresses we keep for rewards by
+            emailing the address below. For comments or data shared on external
+            platforms, users should refer to the respective platform&apos;s
+            privacy policies for managing their data.
+          </p>
+        </div>
+
+        <div id={HEADINGS[9].id} className="mt-15">
+          <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
+            {HEADINGS[9].label}
+          </h2>
+          <p className="mt-10">
             If you have any questions or concerns about this Privacy Policy or
-            the [Your Extension Name] extension, you may contact us at:
+            Aria Wallet, you may contact us at:
           </p>
           <ul className="list-disc mt-5 px-6 md:pl-8">
             <li>Email: dblackstone@orchestralabs.org</li>
