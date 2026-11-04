@@ -1,6 +1,7 @@
 export const ROUTES = {
   HOME: '/',
   PRIVACY_POLICY: '/privacy-policy',
+  TERMS: '/terms',
 };
 
 // External product sites

@@ -87,6 +87,12 @@ export const FOOTER_LINKS = [
         target: '',
         href: ROUTES.PRIVACY_POLICY,
       },
+      {
+        id: '3',
+        label: 'Terms of Service',
+        target: '',
+        href: ROUTES.TERMS,
+      },
     ],
   },
 ];

@@ -2,7 +2,7 @@ import React, { lazy } from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
 
 import { ROUTES } from '@/config/';
-import { Home, PrivacyPolicy } from '@/pages';
+import { Home, PrivacyPolicy, Terms } from '@/pages';
 
 const MainLayout = lazy(() => import('../layouts/MainLayout/MainLayout'));
 
@@ -19,6 +19,10 @@ export const AppRouter: React.FC = (): React.ReactElement | null =>
         {
           path: ROUTES.PRIVACY_POLICY,
           element: <PrivacyPolicy />,
+        },
+        {
+          path: ROUTES.TERMS,
+          element: <Terms />,
         },
       ],
     },
