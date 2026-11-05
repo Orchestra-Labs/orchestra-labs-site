@@ -9,9 +9,10 @@ export const Terms = () => (
           Effective Date: Nov 04, 2026
         </p>
         <p className="mt-15">
-          Given you know Orchestra Labs is a non-custodial service and as such
-          not responsible for its users, I, by use of the services, agree to
-          these terms. Effectively, promising to not be a dick.
+          Given you know Orchestra Labs LLC (Orchestra Labs) is a non-custodial
+          service and as such not responsible for its users, I, by use of the
+          services, agree to these terms. Effectively, promising to not be a
+          dick.
         </p>
 
         <div id="the-plain-version" className="mt-15">
@@ -52,7 +53,7 @@ export const Terms = () => (
             <li>
               <strong>Follow your local laws.</strong> You&apos;re responsible
               for using Orchestra Labs services, including Aria, legally where
-              you live. That includes sanctions and tax rules.
+              you live. That includes tax rules, and sanctions (point 13).
             </li>
             <li>
               <strong>Limit of liability.</strong> To the extent the law allows,
@@ -63,7 +64,8 @@ export const Terms = () => (
             <li>
               <strong>Changes.</strong> We may update these terms. If you keep
               using Orchestra Labs services, including Aria, after an update,
-              you accept the new terms.
+              you accept the new terms. We post updates on this page with a new
+              effective date.
             </li>
             <li>
               <strong>Age.</strong> You must be at least 18, and old enough to
@@ -84,6 +86,43 @@ export const Terms = () => (
               laws of the State of Delaware, USA. Anything not settled by
               arbitration goes to the state or federal courts located in
               Delaware.
+            </li>
+            <li>
+              <strong>Don&apos;t misuse the services.</strong> Don&apos;t use
+              Orchestra Labs services to break the law, launder money, attack or
+              overload our systems, impersonate anyone, or game rewards and
+              referrals with multiple accounts.
+            </li>
+            <li>
+              <strong>Sanctions.</strong> You can&apos;t use Orchestra Labs
+              services if you&apos;re on a US sanctions list, or in a country or
+              region under comprehensive US sanctions.
+            </li>
+            <li>
+              <strong>Suspension.</strong> We can suspend or end your access to
+              our services, such as the AI assistant, rewards and routing, if
+              you break these terms. Your keys and funds stay yours: your
+              recovery phrase works in any compatible wallet.
+            </li>
+            <li>
+              <strong>Your responsibility to us.</strong> If your breach of
+              these terms or the law leads to a claim against Orchestra Labs,
+              you cover the resulting costs.
+            </li>
+            <li>
+              <strong>Licence.</strong> You get a personal, non-exclusive,
+              revocable licence to use Aria. The software, name and logos remain
+              Orchestra Labs&apos;.
+            </li>
+            <li>
+              <strong>Fees.</strong> Aria may charge fees for some features,
+              such as swaps, bridges and AI plans. Network fees go to the
+              network, not to us.
+            </li>
+            <li>
+              <strong>Rewards and referrals.</strong> Points, raffles and
+              referral rewards are promotional. We can change or end them, and
+              withhold rewards from accounts that abuse them.
             </li>
           </ol>
         </div>

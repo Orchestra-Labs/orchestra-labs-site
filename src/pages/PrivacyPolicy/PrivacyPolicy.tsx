@@ -10,7 +10,11 @@ const HEADINGS: Record<number, { id: string; label: string }> = {
   6: { id: 'security', label: '6. Security' },
   7: { id: 'policy-changes', label: '7. Changes to This Policy' },
   8: { id: 'user-rights', label: '8. Your Rights' },
-  9: { id: 'contact-us', label: '9. Contact Us' },
+  9: { id: 'retention', label: '9. Retention' },
+  10: { id: 'cookies-and-analytics', label: '10. Cookies and Analytics' },
+  11: { id: 'children', label: '11. Children' },
+  12: { id: 'where-data-is-processed', label: '12. Where Data Is Processed' },
+  13: { id: 'contact-us', label: '13. Contact Us' },
 };
 
 const NAVIGATION_ITEMS: NavItem[] = Object.keys(HEADINGS).map(key => ({
@@ -109,7 +113,7 @@ export const PrivacyPolicy = () => (
             <li>
               Your email address is only shown in the extension so you know
               which account you&apos;re using. It is never sent to Orchestra
-              Labs.
+              Labs LLC (Orchestra Labs).
             </li>
             <li>
               The backup goes only between your device and your Google account.
@@ -158,10 +162,11 @@ export const PrivacyPolicy = () => (
             {HEADINGS[8].label}
           </h2>
           <p className="mt-10">
-            You can ask us to delete the wallet addresses we keep for rewards by
-            emailing the address below. For comments or data shared on external
-            platforms, users should refer to the respective platform&apos;s
-            privacy policies for managing their data.
+            You can ask what we hold about you, and ask us to delete it,
+            including the wallet addresses we keep for rewards, by emailing the
+            address below. For comments or data shared on external platforms,
+            users should refer to the respective platform&apos;s privacy
+            policies for managing their data.
           </p>
         </div>
 
@@ -170,13 +175,53 @@ export const PrivacyPolicy = () => (
             {HEADINGS[9].label}
           </h2>
           <p className="mt-10">
+            We keep your wallet addresses for rewards while you use Aria, or
+            until you ask us to delete them.
+          </p>
+        </div>
+
+        <div id={HEADINGS[10].id} className="mt-15">
+          <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
+            {HEADINGS[10].label}
+          </h2>
+          <p className="mt-10">
+            We don&apos;t use cookies or analytics to track you.
+          </p>
+        </div>
+
+        <div id={HEADINGS[11].id} className="mt-15">
+          <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
+            {HEADINGS[11].label}
+          </h2>
+          <p className="mt-10">
+            Aria isn&apos;t for anyone under 18, and we don&apos;t knowingly
+            collect children&apos;s data.
+          </p>
+        </div>
+
+        <div id={HEADINGS[12].id} className="mt-15">
+          <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
+            {HEADINGS[12].label}
+          </h2>
+          <p className="mt-10">
+            Our services run on cloud servers outside the US, so your wallet
+            addresses may be processed outside your country.
+          </p>
+        </div>
+
+        <div id={HEADINGS[13].id} className="mt-15">
+          <h2 className="text-h4 md:text-h3 xl:text-h1 font-semibold text-white">
+            {HEADINGS[13].label}
+          </h2>
+          <p className="mt-10">
             If you have any questions or concerns about this Privacy Policy or
             Aria Wallet, you may contact us at:
           </p>
           <ul className="list-disc mt-5 px-6 md:pl-8">
             <li>Email: dblackstone@orchestralabs.org</li>
             <li>
-              Address: 8 The Green, Suite B, Dover, DE, 19901, United States
+              Address: Orchestra Labs LLC
+              <br />8 The Green, Suite B, Dover, DE, 19901, United States
             </li>
           </ul>
         </div>
