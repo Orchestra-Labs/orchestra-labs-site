@@ -2,6 +2,7 @@ export const ROUTES = {
   HOME: '/',
   PRIVACY_POLICY: '/privacy-policy',
   TERMS: '/terms',
+  RAFFLE_RULES: '/raffle-rules',
 };
 
 // External product sites

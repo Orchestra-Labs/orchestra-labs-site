@@ -93,6 +93,12 @@ export const FOOTER_LINKS = [
         target: '',
         href: ROUTES.TERMS,
       },
+      {
+        id: '4',
+        label: 'Raffle Rules',
+        target: '',
+        href: ROUTES.RAFFLE_RULES,
+      },
     ],
   },
 ];

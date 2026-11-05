@@ -2,7 +2,7 @@ import React, { lazy } from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
 
 import { ROUTES } from '@/config/';
-import { Home, PrivacyPolicy, Terms } from '@/pages';
+import { Home, PrivacyPolicy, RaffleRules, Terms } from '@/pages';
 
 const MainLayout = lazy(() => import('../layouts/MainLayout/MainLayout'));
 
@@ -23,6 +23,10 @@ export const AppRouter: React.FC = (): React.ReactElement | null =>
         {
           path: ROUTES.TERMS,
           element: <Terms />,
+        },
+        {
+          path: ROUTES.RAFFLE_RULES,
+          element: <RaffleRules />,
         },
       ],
     },
