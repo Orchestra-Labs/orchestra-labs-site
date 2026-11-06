@@ -40,9 +40,7 @@ export const RaffleRules = () => (
           <ul className={LIST}>
             <li>You must be at least 18 and an adult where you live.</li>
             <li>
-              The raffle is void where prohibited by law, for example where a
-              prize over $5,000 must be registered, as in New York, Florida,
-              Rhode Island and Quebec.
+              The raffle is void where prohibited or restricted by law.
             </li>
             <li>
               Employees of Orchestra Labs and their immediate families and
